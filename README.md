@@ -15,8 +15,8 @@ Internal: Proper placement of components for easy wiring and circuit implementat
 Algorithm Used:
 
 Insertion Sort: Helps in sorting a list of voltage values read by the pH sensor. Taking the median of sorted values and computing the mean ensures a more accurate pH reading by eliminating outliers.
-Scientific Principle:
-The pH measurement relies on ion reactions at the probe, producing a voltage representative of the pH value. The system then processes and displays this value.
+
+Scientific Principle: The pH measurement relies on ion reactions at the probe, producing a voltage representative of the pH value. The system then processes and displays this value.
 
 Technical Requirements:
 
