@@ -1,4 +1,4 @@
-# DIRTA-Water-Tester
+# DIRTA Water Tester :droplet:
 
 This repository contains the design and implementation details of an accurate pH meter device specifically engineered for pool water measurement. The device combines specialized hardware components with algorithms to provide precise pH readings.
 
