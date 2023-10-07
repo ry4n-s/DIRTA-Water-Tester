@@ -1,33 +1,53 @@
 # DIRTA-Water-Tester
 
-Objective: Develop an accurate pH meter device for pool water using a combination of specialized hardware components and algorithms.
+This repository contains the design and implementation details of an accurate pH meter device specifically engineered for pool water measurement. The device combines specialized hardware components with algorithms to provide precise pH readings.
 
-Functional Components:
+## 📐 **Objective**
 
-Analog pH Sensor: Measures pH value of the solution. It produces a voltage based on ion reactions which indicates the pH of the solution.
+Develop an accurate pH meter device for pool water by integrating specialized hardware components and algorithms.
 
-pH Conversion Module: Acts as a voltage regulator ensuring the supply voltage remains between 3.3V to 5.5V. It also contains a variable resistor for calibrating the pH sensor output voltage.
+## 🛠 **Functional Components**
 
-STM32 Nucleoboard: Central microcontroller board responsible for processing the analog voltage reading and converting it into a pH value. It then communicates the pH value to the LCD for display.
+- **Analog pH Sensor**: 
+  - Function: Measures the pH value of the solution.
+  - Mechanism: Produces a voltage based on ion reactions, indicating the pH level.
 
-16x2 LCD Display: Displays the calculated pH value.
+- **pH Conversion Module**: 
+  - Function: Regulates voltage and calibrates sensor output.
+  - Features: Ensures supply voltage remains between 3.3V to 5.5V and contains a variable resistor for calibration.
 
-Device Design:
+- **STM32 Nucleoboard**: 
+  - Role: Acts as the central microcontroller.
+  - Function: Processes the analog voltage reading, converting it into a pH value, and communicates the result to the LCD.
 
-External: A sturdy ABS plastic enclosure of dimensions 158 x 90 x 60mm housing the Nucleoboard, LCD, and conversion module.
-Internal: Proper placement of components for easy wiring and circuit implementation. BNC connector and CN2 USB ports accessible from outside for user interaction.
-Algorithm Used:
+- **16x2 LCD Display**: 
+  - Function: Displays the calculated pH value.
 
-Insertion Sort: Helps in sorting a list of voltage values read by the pH sensor. Taking the median of sorted values and computing the mean ensures a more accurate pH reading by eliminating outliers.
+## 📦 **Device Design**
 
-Scientific Principle: The pH measurement relies on ion reactions at the probe, producing a voltage representative of the pH value. The system then processes and displays this value.
+- **External**:
+  - Material: Sturdy ABS plastic.
+  - Dimensions: 158 x 90 x 60mm.
+  - Features: Houses the Nucleoboard, LCD, and conversion module. BNC connector and CN2 USB ports accessible externally.
 
-Technical Requirements:
+- **Internal**:
+  - Layout: Optimized placement of components to facilitate easy wiring and circuitry.
 
-Accurate pH measurement within +/- 0.1 at 25°C.
-Display results within 2 min of measurement.
-Probe longevity of over 0.5 years.
-Circuit energy consumption under 30W.
-Probe functionality between 5 to 60°C.
+## 🧠 **Algorithm Employed**
 
-![dirta1](https://user-images.githubusercontent.com/132171741/235389864-235d6d29-f96e-4708-a6c8-fe0be561f29a.jpg)
+- **Insertion Sort**: 
+  - Use Case: Sorts the voltage values fetched by the pH sensor. 
+  - Benefit: Calculating the median of sorted values and determining the mean provides a more accurate pH reading by excluding outliers.
+
+## 🧪 **Scientific Principle**
+
+The device's pH measurement is grounded on ion reactions at the probe, which yield a voltage that correlates with the pH value. This voltage is then processed and exhibited.
+
+## ⚙ **Technical Specifications**
+
+- Accuracy: Measures pH within a margin of +/- 0.1 at 25°C.
+- Speed: Displays results within 2 minutes from the time of measurement.
+- Durability: Probe longevity surpasses 0.5 years.
+- Efficiency: Circuit energy consumption is capped at 30W.
+- Operational Range: The probe functions optimally between 5 to 60°C.
+
