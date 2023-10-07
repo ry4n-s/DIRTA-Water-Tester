@@ -5,8 +5,11 @@ Objective: Develop an accurate pH meter device for pool water using a combinatio
 Functional Components:
 
 Analog pH Sensor: Measures pH value of the solution. It produces a voltage based on ion reactions which indicates the pH of the solution.
+
 pH Conversion Module: Acts as a voltage regulator ensuring the supply voltage remains between 3.3V to 5.5V. It also contains a variable resistor for calibrating the pH sensor output voltage.
+
 STM32 Nucleoboard: Central microcontroller board responsible for processing the analog voltage reading and converting it into a pH value. It then communicates the pH value to the LCD for display.
+
 16x2 LCD Display: Displays the calculated pH value.
 
 Device Design:
